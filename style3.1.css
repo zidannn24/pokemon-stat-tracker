@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'VT323', sans-serif;
+}
+
+/* hero start */
+
+.hero-page{
+    min-height: 100vh;
+    background-color: #EE4035;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 3rem;
+}
+
+.hero-page .hero-title{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-page .hero-title h1{
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+.hero-page .hero-title img {
+    width: 344px;                          /*ini*/
+    /* background-color: aqua; */
+}
+
+
+.hero-page .hero-title a{
+    color: #EE4035;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 14px;
+}
+
+.hero-page .hero-img{
+    width: 250px;                           /*ini*/
+}
+
+/* hero end */
+
+/* pokemon page start */
+
+.pokemon-page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.pokemon-page .title{
+    padding-top: 1rem;
+    width: 40%;
+}
+
+.pokemon-page .pokemon-data{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    /* max-height: 600px; */
+    align-items: center;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    /* min-width: 100vw; */
+    width: 100%;
+    padding: 2rem;
+}
+
+.pokemon-page .pokemon-data .list-container{
+    display: flex;
+    width: 100%;
+}
+
+.pokemon-page .pokemon-data .list-container .type,
+.pokemon-page .pokemon-data .list-container .name{
+    width: 100%;
+    border: 1px solid #EE4035;
+    text-align: center;
+}
+
+.pokemon-page .pokemon-data .list-container .type h2,
+.pokemon-page .pokemon-data .list-container .name h2{
+    background-color: #EE4035;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.pokemon-page .pokemon-data .list-container ul{
+    max-height: 400px;
+    overflow: auto;
+}
+
+.pokemon-page .pokemon-data .list-container ul li{
+    border-bottom: 1px solid #EE4035;
+    padding-block: 0.5rem;
+}
+
+.pokemon-page .pokemon-data .list-container ul li a{
+    font-size: 1.5rem;
+    color: #EE4035;
+}
+
+.pokemon-page .pokemon-data .pokemon-card{
+    background-color: #EE4035;
+    width: 100%;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 600px; */
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row1{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding-block: 1rem;
+    text-align: center;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row1 img{
+    width: 200px;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row1 h3{
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row2{
+    /* background-color: aqua; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    padding-inline: 1rem;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row2 h4{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    background-color: #fff;
+    border-radius: 14px;
+    color: #EE4035;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row3{
+    text-align: center;
+    /* height: 100px; */
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row3 h3{
+    font-size: 2.7rem;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row3 table{
+    width: 100%;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.pokemon-page .pokemon-data .pokemon-card .row3 table td{
+    width: 50%;
+    border-bottom: 1px solid #fff;
+}
+
+/* pokemon page end */
+
+@media (min-width: 450px){
+    .hero-page .hero-title img {
+        width: 400px;
+    }
+
+    .hero-page .hero-img{
+        width: 290px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-page{
+        flex-direction: row;
+    }
+
+    .hero-page .hero-title h1{
+        font-size: 4rem;
+    }
+
+    .hero-page .hero-title img{
+        width: 350px;
+    }
+
+    .hero-page .hero-title a{
+        font-size: 3rem;
+    }
+
+    .hero-page .hero-img{
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px){
+    .hero-page .hero-title h1{
+        font-size: 5rem;
+    }
+
+    .hero-page .hero-title img{
+        width: 450px;
+    }
+
+    .hero-page .hero-img{
+        width: 350px;
+    }
+
+    .pokemon-page .pokemon-data{
+        flex-direction: row;
+    }
+
+    .pokemon-page .title{
+        padding-top: 1rem;
+        width: 300px;
+    }
+
+    .pokemon-page .pokemon-data .pokemon-card .row1 img{
+        width: 120px;
+    }
+}
+
+@media (min-width: 1440px){
+    .hero-page .hero-title h1{
+        font-size: 6rem;
+    }
+
+    .hero-page .hero-title img{
+        width: 550px;
+    }
+
+    .hero-page .hero-img{
+        width: 400px;
+    }
+}
+
+@media (min-width: 1440px){
+    .hero-page .hero-title h1{
+        font-size: 7rem;
+    }
+
+    .hero-page .hero-title img{
+        width: 650px;
+    }
+
+    .hero-page .hero-img{
+        width: 450px;
+    }
+
+    .pokemon-page .title{
+        padding-top: 1rem;
+        width: 350px;
+    }
+
+    .pokemon-page .pokemon-data .list-container .type h2,
+    .pokemon-page .pokemon-data .list-container .name h2{
+        font-size: 3rem;
+    }
+
+    .pokemon-page .pokemon-data .list-container ul li a{
+        font-size: 2.5rem;
+    }
+
+    .pokemon-page .pokemon-data .pokemon-card .row2 h4{
+        font-size: 2.5rem;
+    }
+
+    .pokemon-page .pokemon-data .pokemon-card .row3 table{
+        font-size: 2.2rem;
+    }
+}
